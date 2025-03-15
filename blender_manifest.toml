@@ -1,21 +1,21 @@
 schema_version = "1.0.0"
 
-id = "metads_screen_presets"
+id = "Marcels_Utilities"
 version = "1.0.0"
-name = "met[ads] Screen Presets"
-tagline = "Streamlined Set-Up for OOH Screens by met[ads]"
-maintainer = "Marcel Graf <marcel@met-ads.com>"
+name = "Marcels Utilities"
+tagline = "Collection of Blender Utilities"
+maintainer = "Marcel Graf <graf.marcel@gmx.net>"
 type = "add-on"
 
-tags = ["Screen Setup", "Preset"]
+tags = ["Utility"]
 
 blender_version_min = "4.2.0"
 
 license = ["SPDX:GPL-3.0-or-later"]
 
-copyright = ["2025 Marcel Graf", "2025 met[ads]"]
+copyright = ["2025 Marcel Graf"]
 
-tracker_url = "https://github.com/marcelmetads/met-ads-Screen-Presets"
+tracker_url = "https://github.com/magrf/Marcels_Utilities"
 
 [permissions]
 files = "Access to files within the add-on zip structure"
