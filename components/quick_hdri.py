@@ -1,12 +1,11 @@
 import bpy  # type: ignore
 import os
 import math
-import inspect
 import json
 import shutil
 
-from bpy.props import EnumProperty, FloatProperty, StringProperty, PointerProperty
-from bpy.types import Operator, Panel, PropertyGroup
+from bpy.props import EnumProperty, FloatProperty, StringProperty, PointerProperty  # type: ignore
+from bpy.types import Operator, Panel, PropertyGroup # type: ignore
 from ..utils import load_json_asset, refresh_json_asset
 
 # Operator Functions
@@ -84,10 +83,10 @@ class HDRI_OT_Apply(Operator):
 
 class HDRI_OT_SavePreset(Operator):
     bl_idname = "hdri.save_preset"
-    bl_label = ""  # We'll set the label dynamically in invoke
+    bl_label = ""
     bl_description = "Save the current custom HDRI as a new preset"
 
-    preset_name: StringProperty(name="Name", default="")
+    preset_name: StringProperty(name="Name", default="")  # type: ignore
 
     def invoke(self, context, event):
         props = context.scene.hdri_props
@@ -144,7 +143,6 @@ class HDRI_OT_SavePreset(Operator):
             self.report({'ERROR'}, f"Failed to save JSON: {e}")
             return {'CANCELLED'}
 
-        # Refresh the preset list by reloading the JSON presets
         presets = load_hdri_presets()
         valid_values = [entry.get("file", "Unknown") for entry in presets]
         valid_values.append("CUSTOM")

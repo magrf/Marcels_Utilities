@@ -1,7 +1,7 @@
 import bpy # type: ignore
 import os
 import json
-from typing import Union, Optional, Any
+from typing import Union
 
 __all__ = ["load_json_asset", "refresh_json_asset"]
 

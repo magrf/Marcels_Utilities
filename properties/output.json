@@ -1,0 +1,58 @@
+{
+    "exr": {
+        "display_name": "OpenEXR MultiLayer",
+        "file_format": "OPEN_EXR_MULTILAYER",
+        "color_depth": "16",
+        "exr_codec": "DWAA",
+        "passes": {
+            "combined": true,
+            "z": true,
+            "mist": true,
+            "normal": false,
+            "position": false,
+            "vector": true,
+            "uv": false,
+            "denoising_store_passes": false,
+            "object_index": false,
+            "material_index": false,
+            "pass_debug_sample_count": false,
+            "diffuse_direct": false,
+            "diffuse_indirect": false,
+            "diffuse_color": false,
+            "glossy_direct": false,
+            "glossy_indirect": false,
+            "glossy_color": false,
+            "transmission_direct": false,
+            "transmission_indirect": false,
+            "transmission_color": false,
+            "volume_direct": false,
+            "volume_indirect": false,
+            "emit": false,
+            "environment": false,
+            "shadow_catcher": true,
+            "ambient_occlusion": true,
+            "cryptomatte_object": true,
+            "cryptomatte_material": true,
+            "cryptomatte_asset": false
+        }
+    },
+    "png": {
+        "display_name": "PNG",
+        "file_format": "PNG",
+        "color_mode": "RGBA",
+        "color_depth": 16,
+        "compression": 15
+    },
+    "jpeg": {
+        "display_name": "JPEG",
+        "file_format": "JPEG",
+        "color_mode": "RGB",
+        "quality": 90
+    },
+    "mp4": {
+        "display_name": "FFmpeg Video",
+        "file_format": "FFMPEG",
+        "color_mode": "RGB",
+        "ffmpeg_format": "MPEG4"
+    }
+}
