@@ -1,0 +1,51 @@
+[
+    {
+        "display_name": "Default",
+        "noise_thresh": 0.05,
+        "samples": 512,
+        "time": 0,
+        "render_percentage": 0.5,
+        "engine": "CYCLES",
+        "device": "GPU",
+        "persistent_data": true,
+        "use_tiling": true,
+        "filter_width": 1,
+        "transparent": true
+    },
+    {
+        "display_name": "Delivery",
+        "noise_thresh": 0.01,
+        "samples": 1024,
+        "time": 0,
+        "render_percentage": 1,
+        "engine": "CYCLES",
+        "device": "GPU",
+        "persistent_data": true,
+        "use_tiling": true,
+        "filter_width": 1,
+        "transparent": true
+    },
+    {
+        "display_name": "Iteration",
+        "noise_thresh": 0.5,
+        "samples": 64,
+        "time": 5,
+        "render_percentage": 0.5,
+        "engine": "CYCLES",
+        "device": "GPU",
+        "persistent_data": true,
+        "use_tiling": true,
+        "filter_width": 1,
+        "transparent": true
+    },
+    {
+        "display_name": "Workbench",
+        "lighting": "STUDIO",
+        "color_type": "MATERIAL",
+        "show_cavity": true,
+        "cavity_type": "BOTH",
+        "render_percentage": 1,
+        "engine": "BLENDER_WORKBENCH",
+        "transparent": true
+    }    
+]

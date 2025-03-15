@@ -157,7 +157,7 @@ class HDRI_OT_SavePreset(Operator):
 # Panel
 
 class HDRI_PT_Panel(Panel):
-    bl_label = "Quick HDRI"
+    bl_label = "HDRI Presets"
     bl_idname = "HDRI_PT_panel"
     bl_space_type = 'PROPERTIES'
     bl_region_type = 'WINDOW'

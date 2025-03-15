@@ -12,15 +12,17 @@ bl_info = {
 }
 
 import bpy # type: ignore
-from .components import quick_hdri, quick_output
+from .components import quick_hdri, quick_output, quick_render
 
 def register():
     quick_hdri.register()
     quick_output.register()
+    quick_render.register()
 
 def unregister():
     quick_hdri.unregister()
     quick_output.register()
+    quick_render.register()
 
 if __name__ == "__main__":
     register()
